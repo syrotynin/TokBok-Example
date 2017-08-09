@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LandingViewController" customModule="Basic_Video_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFH-f1-n3n" customClass="DesignableView" customModule="Basic_Video_Chat" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="335" height="293.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kab-4h-uyW">
+                                        <rect key="frame" x="143" y="243.5" width="49" height="30"/>
+                                        <state key="normal" title="Stream"/>
+                                        <connections>
+                                            <action selector="streamClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddv-4P-Y11"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Kab-4h-uyW" firstAttribute="centerX" secondItem="xFH-f1-n3n" secondAttribute="centerX" id="H8S-Pp-etS"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kab-4h-uyW" secondAttribute="bottom" constant="20" id="yqJ-cU-m2D"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNs-4b-itX" customClass="DesignableView" customModule="Basic_Video_Chat" customModuleProvider="target">
+                                <rect key="frame" x="20" y="353.5" width="335" height="293.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmr-qi-Y4Q">
+                                        <rect key="frame" x="137.5" y="243.5" width="59" height="30"/>
+                                        <state key="normal" title="Connect"/>
+                                        <connections>
+                                            <action selector="connectClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64Y-8V-SZl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Hmr-qi-Y4Q" secondAttribute="bottom" constant="20" id="8RZ-Za-BJW"/>
+                                    <constraint firstItem="Hmr-qi-Y4Q" firstAttribute="centerX" secondItem="oNs-4b-itX" secondAttribute="centerX" id="kGh-lb-LNA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oNs-4b-itX" secondAttribute="bottom" constant="20" id="8Nh-RC-73F"/>
+                            <constraint firstItem="oNs-4b-itX" firstAttribute="height" secondItem="xFH-f1-n3n" secondAttribute="height" id="B1Z-d3-3Yf"/>
+                            <constraint firstItem="xFH-f1-n3n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="N1M-9k-svu"/>
+                            <constraint firstItem="xFH-f1-n3n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="XMk-TJ-w6x"/>
+                            <constraint firstItem="oNs-4b-itX" firstAttribute="top" secondItem="xFH-f1-n3n" secondAttribute="bottom" constant="20" id="ZNU-gb-iOc"/>
+                            <constraint firstItem="oNs-4b-itX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="mDU-lO-oXo"/>
+                            <constraint firstAttribute="trailing" secondItem="oNs-4b-itX" secondAttribute="trailing" constant="20" id="mJA-WY-R3s"/>
+                            <constraint firstAttribute="trailing" secondItem="xFH-f1-n3n" secondAttribute="trailing" constant="20" id="rea-FU-mXY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="connectButton" destination="Hmr-qi-Y4Q" id="muS-44-QsI"/>
+                        <outlet property="playView" destination="oNs-4b-itX" id="cbe-uG-AFS"/>
+                        <outlet property="streamButton" destination="Kab-4h-uyW" id="1lo-bm-nKa"/>
+                        <outlet property="streamView" destination="xFH-f1-n3n" id="BRx-ci-gid"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
